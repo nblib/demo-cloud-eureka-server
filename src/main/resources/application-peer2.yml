@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-center
+server:
+  port: 8082
+eureka:
+  instance:
+    hostname: eureka2.hewe.vip
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka1.hewe.vip:8081/eureka/,http://eureka3.hewe.vip:8083/eureka/
